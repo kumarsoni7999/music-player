@@ -1,11 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .space-zero {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            overflow: hidden;
+        }
+
+        .left {
+            width: 60%;
+        }
+
+        .right {
+            width: 40%;
+        }
+
+        .music-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .music-item img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .play-pause {
+            margin-left: auto;
+        }
+
+        #now-playing-image {
+            width: -webkit-fill-available;
+            height: 500px;
+        }
+
+        .music-list{
+            overflow-y: scroll;
+            height: 80vh;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Music Player</h1>
+    <div class="container">
+        <div class="left">
+            <h2>My music list</h2>
+            <div class="music-list">
+
+                <div class="music-item" data-src="audio1.mpeg">
+                    <img src="https://qph.cf2.quoracdn.net/main-qimg-923de02296907baa83380dc5848e1dd4-lq" alt="Music 1">
+                    <div>
+                        <h3 class="space-zero music-name">Ghunghroo song</h3>
+                        <p class="space-zero">artist name</p>
+                    </div>
+                </div>
+
+                <div class="music-item" data-src="audio2.mpeg">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f4/0b/88/f40b88d5-75cb-27b8-6b00-bba98f0f2fd0/849486006911_cover.jpg/1200x1200bf-60.jpg"
+                        alt="Music 2">
+                    <div>
+                        <h3 class="space-zero music-name">War movie songs</h3>
+                        <p class="space-zero">artist name</p>
+                    </div>
+                </div>
+
+                <div class="music-item" data-src="audio1.mpeg">
+                    <img src="https://qph.cf2.quoracdn.net/main-qimg-923de02296907baa83380dc5848e1dd4-lq" alt="Music 1">
+                    <div>
+                        <h3 class="space-zero music-name">Ghunghroo song</h3>
+                        <p class="space-zero">artist name</p>
+                    </div>
+                </div>
+
+                <div class="music-item" data-src="audio2.mpeg">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f4/0b/88/f40b88d5-75cb-27b8-6b00-bba98f0f2fd0/849486006911_cover.jpg/1200x1200bf-60.jpg"
+                        alt="Music 2">
+                    <div>
+                        <h3 class="space-zero music-name">War movie songs</h3>
+                        <p class="space-zero">artist name</p>
+                    </div>
+                </div>
+
+                <div class="music-item" data-src="audio1.mpeg">
+                    <img src="https://qph.cf2.quoracdn.net/main-qimg-923de02296907baa83380dc5848e1dd4-lq" alt="Music 1">
+                    <div>
+                        <h3 class="space-zero music-name">Ghunghroo song</h3>
+                        <p class="space-zero">artist name</p>
+                    </div>
+                </div>
+
+                <div class="music-item" data-src="audio2.mpeg">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f4/0b/88/f40b88d5-75cb-27b8-6b00-bba98f0f2fd0/849486006911_cover.jpg/1200x1200bf-60.jpg"
+                        alt="Music 2">
+                    <div>
+                        <h3 class="space-zero music-name">War movie songs</h3>
+                        <p class="space-zero">artist name</p>
+                    </div>
+                </div>
+
+                <div class="music-item" data-src="audio1.mpeg">
+                    <img src="https://qph.cf2.quoracdn.net/main-qimg-923de02296907baa83380dc5848e1dd4-lq" alt="Music 1">
+                    <div>
+                        <h3 class="space-zero music-name">Ghunghroo song</h3>
+                        <p class="space-zero">artist name</p>
+                    </div>
+                </div>
+
+                <div class="music-item" data-src="audio2.mpeg">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f4/0b/88/f40b88d5-75cb-27b8-6b00-bba98f0f2fd0/849486006911_cover.jpg/1200x1200bf-60.jpg"
+                        alt="Music 2">
+                    <div>
+                        <h3 class="space-zero music-name">War movie songs</h3>
+                        <p class="space-zero">artist name</p>
+                    </div>
+                </div>
+
+                <div class="music-item" data-src="audio1.mpeg">
+                    <img src="https://qph.cf2.quoracdn.net/main-qimg-923de02296907baa83380dc5848e1dd4-lq" alt="Music 1">
+                    <div>
+                        <h3 class="space-zero music-name">Ghunghroo song</h3>
+                        <p class="space-zero">artist name</p>
+                    </div>
+                </div>
+
+                <div class="music-item" data-src="audio2.mpeg">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f4/0b/88/f40b88d5-75cb-27b8-6b00-bba98f0f2fd0/849486006911_cover.jpg/1200x1200bf-60.jpg"
+                        alt="Music 2">
+                    <div>
+                        <h3 class="space-zero music-name">War movie songs</h3>
+                        <p class="space-zero">artist name</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="right">
+            <h2>Now Playing</h2>
+            <div class="now-playing">
+                <img id="now-playing-image" src="https://cdns-images.dzcdn.net/images/artist/c7059c115efb435c4502c60488c09d38/264x264.jpg" alt="">
+                <h3 id="now-playing-title" style="text-align: center;"></h3>
+                <audio id="audio" controls style="align-items: center;"></audio>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const musicItems = document.querySelectorAll('.music-item');
+            const nowPlayingImage = document.getElementById('now-playing-image');
+            const nowPlayingTitle = document.getElementById('now-playing-title');
+            const audio = document.getElementById('audio');
+
+            musicItems.forEach(function (item) {
+                item.addEventListener('click', function () {
+                    const src = this.getAttribute('data-src');
+                    const title = this.querySelector('.music-name').textContent;
+                    const imageSrc = this.querySelector('img').getAttribute('src');
+
+                    nowPlayingImage.src = imageSrc;
+                    nowPlayingTitle.textContent = title;
+                    audio.src = src;
+                    audio.play();
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>
